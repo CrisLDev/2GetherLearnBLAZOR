@@ -1,0 +1,21 @@
+<div class="card-header">
+    @if (Title != null)
+    {
+        <h5 class="card-title">
+            @Title
+        </h5>
+    }
+    @if (SubTiTle != null)
+    {
+        <h6 class="card-subtitle mb-2 text-muted">
+            @SubTiTle
+        </h6>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string? Title {get; set;}
+    [Parameter]
+    public string? SubTiTle {get; set;}
+}
