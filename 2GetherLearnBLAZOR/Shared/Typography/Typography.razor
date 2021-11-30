@@ -1,0 +1,21 @@
+<div class="d-flex @mr @ml @mt @mb">
+    @if (icon != null) {
+        <span class="@icon me-2"></span>
+    }
+    @ChildContent
+</div>
+
+@code  {
+    [Parameter]
+    public string? ml { get; set; }
+    [Parameter]
+    public string? mr { get; set; }
+    [Parameter]
+    public string? mt { get; set; }
+    [Parameter]
+    public string? mb { get; set; }
+    [Parameter]
+    public string? icon { get; set; }
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}
